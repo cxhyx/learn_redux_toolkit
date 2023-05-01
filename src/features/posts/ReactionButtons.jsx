@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { reactionAdded } from '../store/postsSlice';
+import { reactionAdded } from './postsSlice';
 
 const reactionEmoji = {
   thumbsUp: '👍',

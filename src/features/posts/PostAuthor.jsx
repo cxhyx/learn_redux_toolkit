@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { useSelector } from 'react-redux';
 
-import { selectAllUsers } from '../store/usersSlice';
+import { selectAllUsers } from '../users/usersSlice';
 
 const PostAuthor = ({ userId }) => {
   const users = useSelector(selectAllUsers);
@@ -14,7 +14,7 @@ const PostAuthor = ({ userId }) => {
 
 PostAuthor.propTypes = {
   // * propTypes 首字母不能大写
-  userId: PropTypes.string,
+  userId: PropTypes.number,
 };
 
 export default PostAuthor;
